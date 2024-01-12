@@ -15,6 +15,7 @@ func _physics_process(delta):
 	
 	if(collision):
 		velocity = velocity.bounce(collision.get_normal()) * speed_multiplier
+		$AudioStreamPlayer2D.play()
 
 func start_ball():
 	randomize()

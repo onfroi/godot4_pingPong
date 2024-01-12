@@ -25,6 +25,8 @@ func _on_player_scored():
 func reset_game():
 	enemy_paddle.global_position.y = 0
 	player_paddle.global_position.y = 0
+	enemy_paddle.global_position.x = 1000
+	player_paddle.global_position.x = -1000
 	ball.global_position = Vector2.ZERO
 	ball.velocity = Vector2.ZERO
 	enemy_paddle.linear_velocity = Vector2.ZERO

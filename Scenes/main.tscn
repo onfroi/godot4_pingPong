@@ -42,7 +42,8 @@ paddle_speed = 35000
 position = Vector2(-1162, 0)
 
 [node name="RightEdge" parent="." instance=ExtResource("5_t27f8")]
-position = Vector2(1033, 0)
+position = Vector2(1015, 0)
+input_pickable = false
 
 [node name="Line2D" type="Line2D" parent="."]
 texture_repeat = 2

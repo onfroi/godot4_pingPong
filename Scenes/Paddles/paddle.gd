@@ -1,6 +1,6 @@
 extends RigidBody2D
 
-@export var speed = 500
+@export var speed = 30000
 
 func _physics_process(delta):
 	var movement = Vector2.ZERO
@@ -10,4 +10,4 @@ func _physics_process(delta):
 	elif Input.is_action_pressed("move_down"):
 		movement = Vector2.DOWN
 		
-	linear_velocity = movement * speed
+	linear_velocity = movement * speed * delta
